@@ -1,0 +1,52 @@
+.card {
+    
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 2rem;
+}
+
+.product-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.rate-price {
+    display: flex;
+    font-size: 18px;
+    gap: 3rem;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.tag {
+    display: inline;
+    background: lightblue;
+    width: fit-content;
+    padding: 5px 12px;
+    border-radius: 25px;
+    font-weight: 600;
+}

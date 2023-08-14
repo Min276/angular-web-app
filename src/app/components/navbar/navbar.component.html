@@ -1,0 +1,16 @@
+<nav>
+  <div>
+    <a href="/">
+      <img src="assets/logo-b.png" alt="logo" />
+    </a>
+  </div>
+  <div class="nav-links">
+    <a
+      *ngFor="let item of navLinks; let i = index"
+      routerLink="{{ item.link }}"
+      routerLinkActive="nav-active"
+    >
+      {{ item.title }}
+    </a>
+  </div>
+</nav>

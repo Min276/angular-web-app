@@ -1,0 +1,18 @@
+{
+  "form_contacts": [
+    {
+      "id": 1,
+      "name": "Min Khant",
+      "email": "minkhant@gmail.com",
+      "phNo": "09345454343",
+      "message": "Hello This is Min Khant from GWT. Nice to meet you!"
+    },
+    {
+      "name": "Linn Htet Naing",
+      "email": "linnhtetnaing@sisburma.com",
+      "phNo": "09245234524",
+      "message": "Hello this is Linn from SISBURMA. We are contacting you to maintain our current e-commerce website.",
+      "id": 2
+    }
+  ]
+}

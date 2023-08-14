@@ -1,1 +1,83 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+button {
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    border: 0px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+
+.card {
+    
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 2rem;
+}
+
+.product-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+.rate-price {
+    display: flex;
+    font-size: 18px;
+    gap: 3rem;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.tag {
+    display: inline;
+    background: lightblue;
+    width: fit-content;
+    padding: 5px 12px;
+    border-radius: 25px;
+    font-weight: 600;
+}
