@@ -1,0 +1,20 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 4rem 0;
+    margin: 4rem 11rem 4rem 6rem;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    line-height: 1.6rem;
+}
+
+.remain-product {
+    color: rgb(62, 62, 62); 
+}
+
+.layout {
+    margin: 2.5rem 13rem -4rem 13rem;
+}

@@ -1,3 +1,86 @@
 h2 {
     text-align: center;
 }
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    margin: 0 10rem 4rem 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.recommended-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem 10rem 4rem 10rem;
+}
+
+.title {
+    font-size: 19px;
+    font-weight: 600;
+    color: rgb(35, 35, 35);
+}
+
+.recommend-card {
+    padding: 1rem 2rem 1.5rem 2rem;
+    color: rgb(35, 35, 35);
+    box-shadow: 0 2px 10px rgb(187, 187, 187);
+    border-radius: 10px;;
+}
+
+.message {
+    margin-top: -0.7rem;
+    font-size: 18.5px;
+    padding-bottom: 0.5rem;
+    line-height: 1.6rem;
+}
+
+.loadmore {
+    margin-bottom: 2rem;
+}
+
+.sub-title-one {
+    font-size: 17.5px;
+    margin-top: 0.7rem;
+    color: rgb(35, 35, 35);
+}
+
+.sub-title-two {
+    font-size: 17.5px;
+    margin-top: -0.5rem;
+} 
+
+img {
+    border-radius: 10px;
+}
+
+h3 {
+    font-size: 21.5px;
+}
+
+.title {
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+}
+
+.proflie-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 16.5px;
+    word-spacing: 0.05rem;
+    line-height: 1.35rem;
+}
+
+.email, a {
+    font-size: 18px;
+}
+

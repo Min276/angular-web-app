@@ -14,5 +14,79 @@
       "message": "Hello this is Linn from SISBURMA. We are contacting you to maintain our current e-commerce website.",
       "id": 2
     }
+  ],
+  "recommendations": [
+    {
+      "id": 1,
+      "title": "Website Services",
+      "message": "It is really good to work together with Elevode. I highly recommended their website servies.",
+      "name": "Mr. Kyaw Myint Oo",
+      "position": "AYA Pay Card HOD",
+      "company": "AYA Innovations Lab",
+      "email": "kyawmyintoo@ayabank.com"
+    },
+    {
+      "id": 2,
+      "title": "System Services",
+      "message": "It is really good to work together with Elevode. I highly recommended their website servies.",
+      "name": "Mr. Kyaw Myint Oo",
+      "position": "AYA Pay Card HOD",
+      "company": "AYA Innovations Lab",
+      "email": "kyawmyintoo@ayabank.com"
+    },
+    {
+      "name": "Min Khant Kyaw",
+      "email": "minkhantkyaw@revitalized.solutions",
+      "position": "Frontend Developer",
+      "company": "Innovative Global Wave Technology",
+      "title": "Software Development",
+      "message": "It offers outstanding software development! I am impressed by your expertise. ",
+      "id": 3
+    },
+    {
+      "name": "Linn Htet Naing",
+      "email": "linnhtetnaing@sisburma.com",
+      "position": "Sales Representative",
+      "company": "SISBURMA Clothing",
+      "title": "E-Commerce Website",
+      "message": "This offers exceptional e-commerce service! Your efficiency is commendable.\n\n\n\n\n",
+      "id": 4
+    },
+    {
+      "id": 5,
+      "title": "FinTech Services",
+      "message": "It is really good to work together with Elevode. I highly recommended their website servies.",
+      "name": "Mr. Kyaw Myint Oo",
+      "position": "AYA Pay Card HOD",
+      "company": "AYA Innovations Lab",
+      "email": "kyawmyintoo@ayabank.com"
+    },
+    {
+      "id": 6,
+      "title": "Cloud Services",
+      "message": "It is really good to work together with Elevode. I highly recommended their website servies.",
+      "name": "Mr. Kyaw Myint Oo",
+      "position": "AYA Pay Card HOD",
+      "company": "AYA Innovations Lab",
+      "email": "kyawmyintoo@ayabank.com"
+    },
+    {
+      "name": "Min Khant Kyaw",
+      "email": "minkhantkyaw@revitalized.solutions",
+      "position": "Frontend Developer",
+      "company": "Innovative Global Wave Technology",
+      "title": "Software Development",
+      "message": "It offers outstanding software development! I am impressed by your expertise. ",
+      "id": 7
+    },
+    {
+      "name": "Linn Htet Naing",
+      "email": "linnhtetnaing@sisburma.com",
+      "position": "Sales Representative",
+      "company": "SISBURMA Clothing",
+      "title": "E-Commerce Website",
+      "message": "This offers exceptional e-commerce service! Your efficiency is commendable.\n\n\n\n\n",
+      "id": 8
+    }
   ]
 }

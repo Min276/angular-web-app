@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {
-  FormBuilder,
-  FormGroup,
-  Validators,
-} from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { FormContactsService } from '../form-contacts.service';
 
 @Component({
@@ -13,7 +9,7 @@ import { FormContactsService } from '../form-contacts.service';
 })
 export class ContactUsComponent implements OnInit {
   myForm!: FormGroup;
-  
+
   constructor(
     private fb: FormBuilder,
     private formService: FormContactsService

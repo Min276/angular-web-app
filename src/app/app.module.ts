@@ -9,12 +9,12 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { OurServicesModule } from './our-services/our-services.module';
 import { ContactUsModule } from './contact-us/contact-us.module';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ProductDetailModule } from './product-detail/product-detail.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    ProductDetailComponent,
   ],
   imports: [
     BrowserModule,
@@ -23,6 +23,7 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     HomeModule,
     AboutUsModule,
     OurServicesModule,
+    ProductDetailModule,
     ContactUsModule
   ],
   providers: [],

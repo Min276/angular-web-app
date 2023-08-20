@@ -1,4 +1,4 @@
-<h2>{{ title }}</h2>
+<h2 class="section-title">{{ title }}</h2>
 <div class="container">
   <div class="left-container">
     <iframe
@@ -76,7 +76,7 @@
           Messages must be at least 15 characters long.
         </div>
       </div>
-      <button type="submit" [disabled]="myForm.invalid">Send Message</button>
+      <button type="submit" class="button" [disabled]="myForm.invalid">Send Message</button>
     </form>
   </div>
 </div>

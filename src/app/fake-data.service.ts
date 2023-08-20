@@ -14,8 +14,12 @@ export class FakeDataService {
     return this.http.get(`${this.baseURL}`)
  }
 
- getLimitData(): Observable<any> {
-  return this.http.get(`${this.baseURL}?limit=6`)
+ getLimitData(quantity: number): Observable<any> {
+  return this.http.get(`${this.baseURL}?limit=${quantity}`)
+}
+
+getDataById(id:number): Observable<any> {
+  return this.http.get(`${this.baseURL}/${id}`)
 }
 
 }

@@ -4,21 +4,24 @@ import { FakeDataService } from '../fake-data.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
+  constructor(private dataService: FakeDataService) {}
+  fetchData: any;
+  isLoading = true;
+  showFullList = false;
 
-   constructor(private dataService: FakeDataService){}
-   fetchData: any;
+  ngOnInit(): void {
+    this.dataService.getLimitData(6).subscribe((data) => {
+      console.log(data);
+      this.fetchData = data;
+      this.isLoading = false;
+      this.showFullList = true;
+    });
+  }
 
-    ngOnInit(): void {
-      this.dataService.getLimitData().subscribe((data) => {
-        console.log(data);
-        this.fetchData = data;
-      })
-    }
-
-    limitDescription = (text: any) => {
-      return text?.slice(" ", 120).concat("...");
-    };
+  limitDescription = (text: any) => {
+    return text?.slice(' ', 120).concat('...');
+  };
 }

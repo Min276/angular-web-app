@@ -1,1 +1,31 @@
-<p>product-detail works!</p>
+<div>
+  <div class="layout">
+    <button (click)="goBack()">⬅&nbsp; Back Button</button>
+
+    <h2 *ngIf="isLoading"  class="loading">Loading data please wait ...</h2>
+
+  </div>
+
+  <div class="grid-container" *ngIf="!isLoading">
+    <div class="img-container">
+      <img src="{{ productData.image }}" alt="" width="350px" height="350px" />
+    </div>
+    <div>
+      <div class="tags">
+        <span class="tag">{{ productData.category }}</span>
+        <span class="tag">Product Id: {{ productData.id }}</span>
+      </div>
+      <div>
+        <h3>{{ productData.title }}</h3>
+        <p>{{ productData.description }}</p>
+        <h3 class="rate-price">
+          <span>Rating {{ productData.rating.rate }} ⭐ </span>
+          <span>Price {{ productData.price }} 💰</span>
+        </h3>
+      </div>
+      <h4 class="remain-product">
+        => {{ productData.rating.count }} products remaining in stock
+      </h4>
+    </div>
+  </div>
+</div>

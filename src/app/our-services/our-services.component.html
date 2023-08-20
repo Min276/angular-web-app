@@ -1,19 +1,28 @@
 <section class="product-section">
-    <h2 class="section-title">Our Products</h2>
-    <div class="card-container">
+  <h2 class="section-title">Our Products</h2>
+  <div class="card-container">
+   <h2 *ngIf="isLoading" class="loading">Loading data please wait ...</h2>
     <div *ngFor="let item of fetchData" class="card">
-       <div class="image-container">
-       <img src={{item.image}} width="250px" height="250px" alt="cover-image" />
+      <a href="/product-detail/{{ item.id }}">
+        <div class="image-container">
+          <img
+            src="{{ item.image }}"
+            width="250px"
+            height="250px"
+            alt="cover-image"
+          />
+        </div>
+        <span class="tag">{{ item.category }}</span>
+        <div>
+          <h3>{{ item.title }}</h3>
+          <p>{{ limitDescription(item.description) }}</p>
+          <h3 class="rate-price">
+            <span>Rating {{ item.rating.rate }} ⭐ </span>
+            <span>Price {{ item.price }} 💰</span>
+          </h3>
+        </div>
+      </a>
     </div>
-         <span class="tag">{{item.category}}</span>
-       <div>
-         <h3>{{item.title}}</h3>
-         <p>{{ limitDescription(item.description)}}</p>
-         <h3 class="rate-price">
-            <span>Rating {{item.rating.rate}} ⭐ </span>
-            <span>Price {{item.price}} 💰</span>
-         </h3>
-       </div>
-       </div>
-    </div>
-    </section>
+  </div>
+  <button (click)="loadMore()" *ngIf="showLoadMore">Load More Products</button>
+</section>

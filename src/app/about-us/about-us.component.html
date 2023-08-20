@@ -1,1 +1,166 @@
-<h2>{{title}}</h2>
+<section class="product-section">
+  <h2 class="section-title">{{ title }}</h2>
+
+  <div class="about-container">
+    <div class="img-container">
+      <img src="../../assets/aboutus.jpg" alt="" width="600px" height="400px" />
+    </div>
+    <div class="profile-container">
+      <h3 class="title">Elevode - Company Profile</h3>
+      <p>
+        Elevode is a cutting-edge technology company specializing in providing
+        advanced and modern software solution services to businesses across
+        various industries. With a relentless focus on innovation, quality, and
+        client satisfaction, we empower our clients to navigate the complex
+        digital landscape and achieve their strategic goals.
+      </p>
+      <p>
+        Our mission is to be a catalyst for digital transformation by delivering
+        innovative, tailor-made software solutions that enable businesses to
+        streamline operations, enhance customer experiences, and drive
+        sustainable growth. We are committed to staying at the forefront of
+        technological advancements and leveraging them to create real value for
+        our clients.
+      </p>
+      <button><a href="#featured">Discover Us</a></button>
+    </div>
+  </div>
+
+  <h2 class="section-title">Recommendations</h2>
+
+  <div class="recommended-container">
+    <div *ngFor="let data of fetchData" class="recommend-card">
+      <h3>{{ data.title }}</h3>
+      <p class="message">{{ data.message }}</p>
+      <p class="title">{{ data.name }}</p>
+      <p class="sub-title-one">
+        <li>{{ data.position }}</li>
+      </p>
+      <p class="sub-title-two">
+        <li>{{ data.company }}</li>
+      </p>
+      <p class="email">
+        Email to: <a href="mailto:{{ data.email }}">{{ data.email }}</a>
+      </p>
+    </div>
+  </div>
+  <button class="loadmore" (click)="loadMore()" *ngIf="showLoadMore">
+    Load More Data
+  </button>
+
+  <h3 [class.success]="message" [class.default]="!message">{{ message }}</h3>
+
+  <h2 class="section-title">Add your recommendation here</h2>
+  <div class="recommended-container">
+    <div class="img-container">
+      <img
+        src="../../assets/feedback.jpg"
+        alt=""
+        width="650px"
+        height="550px"
+      />
+    </div>
+    <div class="profile-container">
+      <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+        <div>
+          <label>
+            Name:
+            <input formControlName="name" placeholder="Your name" />
+          </label>
+          <div
+            *ngIf="
+              myForm.get('name')?.invalid &&
+              (myForm.get('name')?.dirty || myForm.get('name')?.touched)
+            "
+            class="error-message"
+          >
+            Please provide a valid name.
+          </div>
+        </div>
+        <div>
+          <label>
+            Email:
+            <input formControlName="email" placeholder="Your email" />
+          </label>
+          <div
+            *ngIf="
+              myForm.get('email')?.invalid &&
+              (myForm.get('email')?.dirty || myForm.get('email')?.touched)
+            "
+            class="error-message"
+          >
+            Please provide a valid email address.
+          </div>
+        </div>
+        <div>
+          <label>
+            Position:
+            <input formControlName="position" placeholder="Your positon" />
+          </label>
+          <div
+            *ngIf="
+              myForm.get('position')?.invalid &&
+              (myForm.get('position')?.dirty || myForm.get('position')?.touched)
+            "
+            class="error-message"
+          >
+            Please provide a valid position.
+          </div>
+        </div>
+        <div>
+          <label>
+            Company:
+            <input formControlName="company" placeholder="Your company" />
+          </label>
+          <div
+            *ngIf="
+              myForm.get('company')?.invalid &&
+              (myForm.get('company')?.dirty || myForm.get('company')?.touched)
+            "
+            class="error-message"
+          >
+            Please provide a valid company name.
+          </div>
+        </div>
+        <div>
+          <label>
+            Service:
+            <input
+              formControlName="service"
+              placeholder="Service we served you"
+            />
+          </label>
+          <div
+            *ngIf="
+              myForm.get('service')?.invalid &&
+              (myForm.get('service')?.dirty || myForm.get('service')?.touched)
+            "
+            class="error-message"
+          >
+            Please provide a valid service title name.
+          </div>
+        </div>
+        <div>
+          <label> Message: </label>
+          <textarea
+            formControlName="message"
+            placeholder="Your message"
+          ></textarea>
+          <div
+            *ngIf="
+              myForm.get('message')?.invalid &&
+              (myForm.get('message')?.dirty || myForm.get('message')?.touched)
+            "
+            class="error-message"
+          >
+            Messages must be at least 15 characters long.
+          </div>
+        </div>
+
+        <button type="submit" class="button" [disabled]="myForm.invalid">
+          Submit Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
